@@ -1,0 +1,39 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #0d0d2b, #1a0c2d);
+    color: white;
+    text-align: center;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Dark/Light Mode */
+body.light-mode {
+    background: white;
+    color: black;
+}
+
+/* Glowing Neon Text */
+.glowing-text {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; }
+    to { text-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff; }
+}
+
+/* Button Pulse Effect */
+.pulse {
+    animation: pulseEffect 2s infinite;
+}
+
+@keyframes pulseEffect {
+    0% { box-shadow: 0 0 10px #ff00ff; }
+    50% { box-shadow: 0 0 20px #ff00ff; }
+    100% { box-shadow: 0 0 10px #ff00ff; }
+}
